@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script&family=Roboto:normal,wght@1,700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+    color: #eee;
+}
+section{
+    scroll-margin-top: 4rem;
+}
+img{
+    max-width: 100%;
+}
+nav{
+    background-color: #be3144;
+    height: 68px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding:0 55px;
+    gap: 40px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 400;
+}
+main{
+    margin-top: 65px;
+    
+}
+#welcome-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    padding: 25vh 20px 0;
+    background:linear-gradient(to top right, #555,#444);
+    width:100%;
+    text-align: center;
+}
+
+#welcome-section h1{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+#welcome-section em{
+font-size :30px;
+color: #be3144;
+font-weight: 100;
+}
+/* projects */
+
+
+#projects{
+    background-color:#45567d;
+    padding: 110px 15px 90px ;
+}
+
+#projects h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #f0f0f0;
+    text-align: center;
+    margin:0  auto 50px;  
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 4px;
+    width: fit-content;
+}
+
+#project-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 25px;
+    margin-bottom: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.projects a{
+    text-decoration: none;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    text-align: center;   
+}
+
+.projects p{
+    padding: 20px;
+    background-color: #444;
+    font-size: 20px;
+    
+}
+.overlays{
+    color: #444;
+}
+.projects:hover .overlays{
+    color: #ff7f50;
+    transition: all 0.3s 0.2s ease-in-out;
+}
+img{
+    height: 350px;
+    width: 100%;
+    display: block;
+    margin: 0 auto auto;
+}
+button{
+    display: block;
+    margin: auto;
+    background-color: #333;
+    color: #f0f0f0;
+    font-size: 25px;
+    padding: 8px 15px;
+    border: none;
+    font-weight: 500;
+}
+
+#contact-me{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    color: #f0f0f0;
+    width: 100%;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+    /* top = message + contactslinks */
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+    width: 100%;
+}
+.message{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.message h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.message i{
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+}
+.contact a{
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 24px;
+}
+.contact a:hover{
+    transform: translateY(8px);
+    transition: all 0.3s  linear;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: #be3144 5px solid;
+    text-align: center;
+    padding:  30px;
+}
+.love{
+    color: red;
+}
+
+@media (max-width:760px) {
+
+    .contact a{
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#welcome-section h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#welcome-section em{
+font-size :24px;
+color: #be3144;
+font-weight: 100;
+}
+#projects h2 {
+    font-size:  36px;}
+.message h1{
+    font-size: 35px;   
+}
+.bottom{
+    padding: 30px 8px;
+}
+
+}
