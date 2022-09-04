@@ -1,8 +1,8 @@
 # freeCodeCamp Responsive web design.  
-| Personal portofolio  | Technical Documentatio page |
-| ------------- | ------------- |
-| https://classy-lily-926bca.netlify.app  | https://gentle-maamoul-87b2f8.netlify.app/  |
-[Link text Here](https://link-url-here.org)
+[Personal Portfolio](https://classy-lily-926bca.netlify.app)  
+[Technical Documentation](https://gentle-maamoul-87b2f8.netlify.app)  
+[Landing Page](https://flourishing-blini-53991d.netlify.app)  
+
 
 
 
